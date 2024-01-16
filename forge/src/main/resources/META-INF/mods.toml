@@ -1,6 +1,6 @@
 modLoader = "javafml"
-loaderVersion = "[46,)"
-issueTrackerURL = "https://github.com/MrMelon54/bedrock_destroyer/issues"
+loaderVersion = "*"
+issueTrackerURL = "https://github.com/mrmelon54/bedrock_destroyer/issues"
 license = "GPL-3.0-only"
 
 [[mods]]
@@ -8,26 +8,19 @@ modId = "bedrock_destroyer"
 version = "${version}"
 displayName = "Bedrock Destroyer"
 authors = "MrMelon54"
-description = "Removes bedrock from players"
+description = "${description}"
 logoFile = "/icon.png"
-
-[[dependencies.bedrock_destroyer]]
-modId = "forge"
-mandatory = true
-versionRange = "[46,)"
-ordering = "NONE"
-side = "BOTH"
 
 [[dependencies.bedrock_destroyer]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20,)"
+versionRange = "[${minecraft_version},)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.bedrock_destroyer]]
 modId = "architectury"
 mandatory = true
-versionRange = "[9.0.0,)"
-ordering = "AFTER"
+versionRange = "[${architectury_version},)"
+ordering = "NONE"
 side = "BOTH"
